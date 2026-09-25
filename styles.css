@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    width: fit-content; 
+    gap: 10px; 
+    background-color: #878788;
+}
+
+#painel {
+    display: flex;
+    box-sizing: border-box;
+}
+
+#painel-digital {
+    background-color: #f0f0f0;
+    margin-top: 10px;
+    width: 90%;
+    box-sizing: border-box; 
+    outline: none;     
+    font-size: 1.7em;
+}
+
+.container {
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
+#container-btn {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    font-size: 1.2em;
+}
