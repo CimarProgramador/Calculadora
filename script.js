@@ -14,7 +14,7 @@ function apagarUltimo() {
 }
 
 key.forEach(function (botao) {
-    // 3. Adiciona o ouvinte de evento em cada botão individualmente
+    // Adiciona o ouvinte de evento em cada botão individualmente
     botao.addEventListener('click', function (event) {
         // O 'event.target' serve para descobrir qual botão exato foi clicado
         console.log('Você clicou no: ' + event.target.innerText);
@@ -45,6 +45,7 @@ key.forEach(function (botao) {
         }
     })
 });
+
 
 result.addEventListener('click', function calcularResult() {
     // Permite apenas números, espaços e os operadores + - * / ( )
@@ -84,3 +85,5 @@ result.addEventListener('click', function calcularResult() {
     }
 }); 
 */
+
+

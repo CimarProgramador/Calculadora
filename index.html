@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculador</title>
+    <title>Calculadora Moderna</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
-
 <body>
-    <main>
-        <input class="container" type="text" id="painel-digital" value="0" readonly>
-        <div class="container" id="container-btn">
-            <button onclick="limparVisor()">C</button>
-            <button onclick="apagarUltimo()">←</button>
-            <button></button>
-            <button></button>
+    <main class="calculator">
+        <input type="text" id="painel-digital" value="0" readonly>
+        
+        <div id="container-btn">
+            <button onclick="limparVisor()" class="btn-clear">C</button>
+            <button onclick="apagarUltimo()" class="btn-back">←</button>
+            <button class="key btn-op">/</button>
+            <button class="key btn-op">*</button>
+
             <button class="key">7</button>
             <button class="key">8</button>
             <button class="key">9</button>
-            <button class="key">/</button>
+            <button class="key btn-op">-</button>
+
             <button class="key">4</button>
             <button class="key">5</button>
             <button class="key">6</button>
-            <button class="key">*</button>
+            <button class="key btn-op">+</button>
+
             <button class="key">1</button>
             <button class="key">2</button>
             <button class="key">3</button>
-            <button class="key">-</button>
-            <button class="key">0</button>
-            <button class="key">.</button>
             <button id="result">=</button>
-            <button class="key">+</button>
+
+            <button class="key btn-zero">0</button>
+            <button class="key">.</button>
         </div>
     </main>
+
+    <script src="./script.js"></script>
 </body>
-
-<script src="./script.js"></script>
-
 </html>
